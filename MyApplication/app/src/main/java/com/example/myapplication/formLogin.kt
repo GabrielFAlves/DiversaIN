@@ -87,7 +87,7 @@ class formLogin : AppCompatActivity() {
     }
 
     private fun TelaUser() {
-        val intent = Intent(this, TelaUser::class.java)
+        val intent = Intent(this, telaPrincipal::class.java)
         startActivity(intent)
         finish()
     }
