@@ -48,7 +48,6 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bem Vindo E-404!"
             android:textAllCaps="false"
             android:textStyle="bold"
             android:typeface="normal"
