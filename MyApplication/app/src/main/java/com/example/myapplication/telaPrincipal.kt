@@ -4,11 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.myapplication.servicosDiversain
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -23,12 +25,19 @@ class telaPrincipal : AppCompatActivity() {
 
         IniciarComponentes()
 
+        val imageButton3: ImageButton = findViewById(R.id.imageButton3)
+        imageButton3.setOnClickListener {
+            val intent = Intent(this, tela_da_loja::class.java)
+            startActivity(intent)
+        }
         val imageButton: ImageButton = findViewById(R.id.imageButton)
-
-        // Configure o OnClickListener
         imageButton.setOnClickListener {
-            // Crie um Intent para iniciar a TelaUser
             val intent = Intent(this, TelaUser::class.java)
+            startActivity(intent)
+        }
+        val imageButton6: ImageButton = findViewById(R.id.imageButton6)
+        imageButton6.setOnClickListener {
+            val intent = Intent(this, servicosDiversain::class.java)
             startActivity(intent)
         }
     }

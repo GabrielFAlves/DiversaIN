@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -28,9 +29,14 @@ class TelaUser : AppCompatActivity() {
 
         IniciarComponentes()
 
+        val voltar: ImageView = findViewById(R.id.voltar)
+        voltar.setOnClickListener {
+            val intent = Intent(this, telaPrincipal::class.java)
+            startActivity(intent)
+        }
+
         bt_deslogar.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
-
             val intent = Intent(this, formLogin::class.java)
             startActivity(intent)
             finish()
