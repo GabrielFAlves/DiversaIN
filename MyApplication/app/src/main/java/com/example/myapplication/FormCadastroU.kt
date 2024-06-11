@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
@@ -62,6 +63,11 @@ class FormCadastroU : AppCompatActivity() {
                     snackbar.setBackgroundTint(Color.WHITE)
                     snackbar.setTextColor(Color.BLACK)
                     snackbar.show()
+
+                    // Redirecionar para a tela de login
+                    val intent = Intent(this@FormCadastroU, formLogin::class.java)
+                    startActivity(intent)
+                    finish() // Finaliza a atividade atual para que o usuário não possa voltar para ela pressionando o botão "Voltar"
                 } else {
                     var erro: String
                     try {
@@ -82,6 +88,7 @@ class FormCadastroU : AppCompatActivity() {
                     snackbar.show()
                 }
             }
+
     }
 
     private fun SalvarDadosUser() {

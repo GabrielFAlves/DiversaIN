@@ -13,6 +13,27 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".InclusaoPraticaMa"
+            android:exported="false" />
+        <activity
+            android:name=".MapaRecrutamento"
+            android:exported="false" />
+        <activity
+            android:name=".InclusaoPraticaMagarao"
+            android:exported="false" />
+        <activity
+            android:name=".CulturaInclusiva"
+            android:exported="false" />
+        <activity
+            android:name=".ComunicacaoInclusiva"
+            android:exported="false" />
+        <activity
+            android:name=".TelaJogoMain"
+            android:exported="false" />
+        <activity
+            android:name=".tela_de_noticias2"
+            android:exported="false" />
+        <activity
             android:name=".Funcionarios"
             android:exported="false" />
         <activity

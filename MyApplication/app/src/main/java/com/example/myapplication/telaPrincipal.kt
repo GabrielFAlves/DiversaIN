@@ -25,6 +25,21 @@ class telaPrincipal : AppCompatActivity() {
 
         IniciarComponentes()
 
+        val imageButton5: ImageButton = findViewById(R.id.imageButton5)
+        imageButton5.setOnClickListener {
+            val intent = Intent(this, TelaJogoMain::class.java)
+            startActivity(intent)
+        }
+        val imageButton4: ImageButton = findViewById(R.id.imageButton4)
+        imageButton4.setOnClickListener {
+            val intent = Intent(this, tela_de_noticias2::class.java)
+            startActivity(intent)
+        }
+        val imageButton2: ImageButton = findViewById(R.id.imageButton2)
+        imageButton2.setOnClickListener {
+            val intent = Intent(this, Funcionarios::class.java)
+            startActivity(intent)
+        }
         val imageButton3: ImageButton = findViewById(R.id.imageButton3)
         imageButton3.setOnClickListener {
             val intent = Intent(this, tela_da_loja::class.java)
